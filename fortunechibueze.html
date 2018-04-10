@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FortuneChibueze</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body onload="startTime()">
+		<header>
+			<div class="fort">
+			<div class="row">
+				<div class="logo">
+					<img src="fb2.png">
+				</div>
+				<ul class="main-nav">
+					<LI class="active"><a href=""> HOME </a></LI>
+					<LI><a href=""> ARTIST </a></LI>
+					<LI><a href=""> PORTFOLIO </a></LI>
+					<LI><a href=""> CONTACT </a></LI>
+				</ul>
+			<div class="facebook">
+					<img src="f.png">
+				</div>
+			<div class="instagram">
+					<img src="inst.png">
+				</div>
+			<div class="twitter">
+					<img src="twit.png">
+				</div>
+			</div>
+		</div>
+
+			
+
+			<div class="bolt">
+				<h1>FORTUNEBOLT CHIBUEZE</h1>
+			</div>
+
+			<div class="bolt2">
+				<h3>PENCIL ARTIST & ILLUSTRATOR</h3>
+			</div>
+		<span class="dot1"></span>
+		<span class="dot2"></span>
+		<span class="dot3"></span>
+		<span class="dot4"></span>
+	</header>
+
+
+
+
+</body>
+<footer>
+	<div class="fort2">
+		<div class="bolt3">
+		<h5>@FORTUNEBOLT CHIBUEZE</h5>
+	</div>
+	<div class="arrow">
+		<img src="arrow.png">
+	</div>
+	<script>
+		function startTime(){
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML= h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i){
+			if (i<10) {i= "0"+i}; //add zero in front of numbers<10
+			return i;
+		}
+	</script>
+	
+	</div>
+	<div id="txt" style="position: absolute; left: 1200px; bottom: -60px; color: white;"></div>
+</footer>
+</html>
